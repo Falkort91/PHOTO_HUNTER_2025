@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Hunter !</title>
-</head>
-<body>
-    <header>
-        HEADER
-    </header>
+<html lang="fr">
 
-    <main>
-        MAIN
-        <?php echo $content; ?>
-        <?php var_dump($connection)?>
-    </main>
+  <head>
+      <?php include "../app/views/templates/partials/_head.php"?>
+  </head>
 
-    <footer>
-        FOOTER
-    </footer>
+  <body class="bg-gray-300">
+    <?php include "../app/views/templates/partials/_nav.php"?>
+    
+    <?php include "../app/views/templates/partials/_main.php"?>
+
+    <?php include "../app/views/templates/partials/_footer.php"?>
+  </body>
+</html>
+
 </body>
 </html>
