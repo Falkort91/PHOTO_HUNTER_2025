@@ -1,5 +1,5 @@
 <div class="grid grid-cols-3 gap-4">
-
+    
     <?php foreach ($photos as $photo): ?>
 
         <article class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -20,7 +20,13 @@
                     </div>
                 </header>
 
-                <p class="text-base text-gray-600"><?php echo $photo['resume'];?></p>
+                <p class="text-base text-gray-600">
+                    <?php 
+                        // Pour voir function truncate se trouvant : core/helpers.php
+                        echo Core\Helpers\truncate($photo['resume']); // Utiliser le namespace
+
+                    ?>
+                </p>
 
                 <a href="photo.html"class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-700">En savoir plus</a>
             </div>
