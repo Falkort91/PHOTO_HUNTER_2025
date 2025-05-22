@@ -28,7 +28,7 @@
                     ?>
                 </p>
 
-                <a href="photo.html"class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-700">En savoir plus</a>
+                <a href="?photos=show&id=<?php echo $photo['id'];?>"class="mt-4 inline-block bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-700">En savoir plus</a>
             </div>
         </article>
 

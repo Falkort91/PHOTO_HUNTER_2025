@@ -6,5 +6,5 @@
 
 <!-- Affichage des catégories -->
 <?php foreach ($categories as $category):?>
-    <li><?php echo $category ['name'];?></li>
+    <li><a href="#"><?php echo $category ['name'];?></a></li>
 <?php endforeach;?>

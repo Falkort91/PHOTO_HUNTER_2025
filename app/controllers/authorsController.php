@@ -5,7 +5,7 @@ use \App\Models\AuthorsModel; //Permet de mettre uniquement le dernier terme dev
 use \PDO; //Permet d'évité de DEVOIR mettre le \ devant le PDO dans l'appel de la function
 
 function indexAction(PDO $connexion): void{
-    include '../app/models/authorsModel.php';
+    include_once '../app/models/authorsModel.php';
     $authors = AuthorsModel\findAll($connexion);
     global $content;
     ob_start();
@@ -14,7 +14,7 @@ function indexAction(PDO $connexion): void{
 }
 
 function showAction(PDO $connexion, int $id): void{
-    include '../app/models/authorsModel.php';
+    include_once '../app/models/authorsModel.php';
     $author = MonstersModel\findOneById($connexion,$id); //ATTENTION préciser entre () ce qu'il faut aller rechercher
     global $content;
     ob_start();
