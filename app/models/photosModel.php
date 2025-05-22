@@ -12,7 +12,6 @@ function findAll(PDO $connexion){
             JOIN authors aut ON ph.author_id = aut.id
             ORDER BY ph.created_at DESC
             LIMIT 3;";
-    
     $rs = $connexion->query($sql);                  // le "query" est utilisé quand toutes les données sont connues dés le départ et qui ne nécessite pas d'action de l'utilisateur
     return $rs->fetchAll(PDO::FETCH_ASSOC);
 }
