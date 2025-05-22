@@ -4,8 +4,16 @@
 //PATTERN : /?photos=xxx
 //CTRL : photosController
 //ACTION : show 
-if(isset($_GET['photos'])):
+if (isset($_GET['photos'])):
     include_once '../app/routers/photos.php';
+
+//ROUTE DES AUTHORS authors.index  
+//PATTERN : /?authors=xxx
+//CTRL : authorsController
+//ACTION : index 
+elseif (isset($_GET['authors'])):
+    include_once '../app/routers/authors.php';
+
 // ROUTE PAR DEFAUT
 // PATTERN : /
 // CTRL : pagesController
